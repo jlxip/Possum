@@ -9,7 +9,7 @@ function readInputFile(evt) {
 			array.push(toPush)
 		}
 
-		toImage(array, evt.target.files[0].type)
+		encode(array, evt.target.files[0].type)
 	}
 	reader.readAsArrayBuffer(evt.target.files[0])
 }
@@ -20,7 +20,7 @@ function readInputText() {
 	input = input.split('')
 	array = []
 	for(i=0;i<input.length;i++) array.push(input[i].charCodeAt(0))
-	toImage(array, 'text/plain')
+	encode(array, 'text/plain')
 }
 
 function readOutputFile(evt) {
@@ -29,7 +29,7 @@ function readOutputFile(evt) {
 	img = new Image()
 
 	img.onload = () => {
-		fromImage(img)
+		decode(img)
 	}
 
 	img.src = URL.createObjectURL(evt.target.files[0])

@@ -4,27 +4,29 @@
 	<head>
 		<meta charset='UTF-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
-		<!--<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet'>-->
+		<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet'>
 		<link rel='stylesheet' type='text/css' href='https://necolas.github.io/normalize.css/7.0.0/normalize.css'>
 		<link rel='stylesheet' type='text/css' href='style.css'>
 		<script type='text/javascript' src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
 		<script type='text/javascript' src='js/utf8.js'></script>
-		<script type='text/javascript' src='js/toImage.js'></script>
+		<script type='text/javascript' src='js/encode.js'></script>
 		<script type='text/javascript' src='js/download.js'></script>
-		<script type='text/javascript' src='js/fromImage.js'></script>
+		<script type='text/javascript' src='js/decode.js'></script>
 		<script type='text/javascript' src='js/script.js'></script>
 		<title>POSSUM</title>
 	</head>
 	<body>
-		<h1>TO IMAGE</h1>
-		<textarea id='input'></textarea><br>
-		Or: <input type='file' id='inputFile'><br>
-		<br>
-		<canvas width='120' height='120'>Your browser doesn't support this.</canvas>
+		<div id='page'>
+			<h1>ENCODE</h1>
+			<textarea id='input'></textarea><br>
+			Or: <input type='file' id='inputFile'><br>
+			<br>
+			<canvas width='120' height='120'>Your browser doesn't support this.</canvas>
 
-		<br><br><br><hr><br><br><br>
+			<hr>
 
-		<h1>FROM IMAGE</h1>
-		<input type='file' id='outputFile' accept='image/*'>
+			<h1>DECODE</h1>
+			<input type='file' id='outputFile' accept='image/*'>
+		</div>
 	</body>
 </HTML>

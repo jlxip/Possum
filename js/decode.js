@@ -4,7 +4,7 @@ function finished(data, i, j) {
 	else return false
 }
 
-function fromImage(img) {
+function decode(img) {
 	canvas = document.createElement('canvas');
 	canvas.width = img.width;
 	canvas.height = img.height;
@@ -29,6 +29,8 @@ function fromImage(img) {
 		}
 	}
 
+	console.log('MIME decoded')
+
 	k = 0	// k var is used to calculate the start position of the content
 	k += 4	// First (white) pixel
 	k += MIME.length // MIME length
@@ -47,5 +49,5 @@ function fromImage(img) {
 		}
 	}
 
-	download(clean, 'decrypted', MIME)
+	download(clean, 'decoded', MIME)
 }

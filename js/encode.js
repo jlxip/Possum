@@ -1,4 +1,4 @@
-function toImage(array, mime) {	// Request dec array
+function encode(array, mime) {	// Request dec array
 	for(i=0;i<(array.length % 3);i++) array.push(0)
 	
 	mime = mime.split('')

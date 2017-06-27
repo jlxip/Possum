@@ -1,3 +1,29 @@
+body {
+	background-color: #F4F4F4;
+	font-family: 'Arial', sans-serif;
+}
+
+div#page {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	border: 2px solid black;
+	border-radius: 50px;
+	padding: 32px;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+}
+
 canvas {
 	border: 1px solid #d3d3d3;
+}
+
+textarea {
+	background-color: #E5E5E5;
+}
+
+hr {
+	margin: 32px 0;
 }
